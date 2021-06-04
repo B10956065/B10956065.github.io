@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>互動式網頁設計期末作業</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <a href="#"><img src="images/logo.png" class="logo" alt="logo" /></a>
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="">Home Page</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Others Product</a></li>
+                        <li><a href="">Download Demo</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu_icon" alt="menu_logo" onclick="togglemenu()" />
+            </div>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col_1">
+                    <h2>Saab 35<br>Draken</h2>
+                    <h3>Fighter aircraft (interceptor)</h3>
+                    <p>(blended wing-body)</p>
+                    <h4>US$30 million</h4>
+                    <button type="button">Buy Now<img src="images/arrow.png" alt="arrow.png" /></button>
+                </div>
+                <div class="col_2">
+                    <img src="images/J35_Draken_1024px.png" class="airfighter" alt="airfighter" />
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="images/add.png" alt="add" />
+                        <p><small>Add to Cart</small></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.saab.com/" target="_blank"><img src="images/saab.jpg" /></a>
+                <a href="https://www.facebook.com/saabtechnologies/" target="_blank"><img src="images/facebook.png" /></a>
+                <a href="https://twitter.com/Saab" target="_blank"><img src="images/twitter.png" /></a>
+                <a href="https://www.instagram.com/saab/" target="_blank"><img src="images/instagram.png" /></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
