@@ -1,0 +1,137 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta lang="zh-tw">
+    <title>TITLE HERE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        header {
+            position: relative;
+            background-color: black;
+            height: 75vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+            header video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: 0;
+                -ms-transform: translateX(-50%) translateY(-50%);
+                -moz-transform: translateX(-50%) translateY(-50%);
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            header .container {
+                position: relative;
+                z-index: 2;
+            }
+
+            header .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                opacity: 0.5;
+                z-index: 1;
+            }
+
+        @media (pointer: coarse) and (hover: none) {
+            header {
+                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+            }
+
+                header video {
+                    display: none;
+                }
+        }
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <a name="top"></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- nav bar ---->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- navbar_index_logo ---->
+            <a class="navbar-brand" href="#top" style="font-size:25px"><img src="images/index_logo_navbar.png" alt="logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- 按鈕0_to home page ---->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">　首頁　</a>
+                    </li>
+
+                    <!-- 按鈕2_unknow ---->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">一時之間</a>
+                    </li>
+
+                    <!-- 按鈕1_unkonw ---->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">想不到放啥</a>
+                    </li>
+
+                    <!-- 下拉式選單_產品列表 ---->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>產品列表</b>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">F-22</a></li>
+                            <li><a class="dropdown-item" href="#">F-35</a></li>
+                            <li><a class="dropdown-item" href="#">Su-57</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="product_j35.html">J-35</a></li>
+                            <li><a class="dropdown-item" href="#">F-14</a></li>
+                            <li><a class="dropdown-item" href="#">EF-2000</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Bf-109</a></li>
+                            <li><a class="dropdown-item" href="#">Ta-152</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 下載.rar檔案 ---->
+                    <li class="nav-item">
+                        <a class="nav-link" href="download/AvoidObstacles.rar">下載試用版</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header ---->
+    <!-- https://startbootstrap.com/snippets/video-header ---->
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/Minecraft_2021-06-10_18-14-58.mp4" type="video/mp4">
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">薩博錒鍶</h1>
+                    <p class="lead mb-0">燒、殺、姦、淫、擄、掠、嫖、賭、飲、盪、吹</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>
