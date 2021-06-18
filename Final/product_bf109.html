@@ -3,8 +3,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <link href="style.css" rel="stylesheet" />
-    <title>Saab J-35 Draken</title>
+    <title>Messerschmitt Bf 109</title>
+    <script>
+        function error_stop_selling() {
+            alert("此產品已經停售");
+        }
 
+        function error404() {
+            alert("error 404 page not found\nUnable to find Messerschmitt's official social media");
+        }
+    </script>
 </head>
 
 <body>
@@ -27,17 +35,17 @@
         <main>
             <div class="row">
                 <div class="col_1">
-                    <h2>Saab J-35<br>Draken</h2>
-                    <h3>Fighter aircraft (interceptor)</h3>
-                    <p>(blended wing-body)</p>
-                    <h4>US$30 million</h4>
-                    <button type="button" onclick="window.open('https://www.saab.com/','_blank')">Buy Now<img src="images/arrow.png" alt="arrow.png" /></button>
+                    <h2>Messerschmitt<br>Bf 109</h2>
+                    <h3>Fighter aircraft (Fighter)</h3>
+                    <p>(most produced fighter aircraft in history)</p>
+                    <h4>US$107,000 in 1943</h4>
+                    <button type="button" onclick="error_stop_selling()">Buy Now<img src="images/arrow.png" alt="arrow.png" /></button>
                 </div>
                 <div class="col_2">
-                    <img src="images/J35_Draken_1024px.png" class="airfighter" alt="airfighter" />
+                    <img src="images/Messerschmitt_Bf109_1024px.png" class="airfighter" alt="airfighter" />
                     <div class="color-box"></div>
                     <div class="add-btn">
-                        <img src="images/add.png" alt="add" onclick="window.open('https://www.saab.com/','_blank')" />
+                        <img src="images/add.png" alt="add" onclick="error_stop_selling()" />
                         <p><small>Add to Cart</small></p>
                     </div>
                 </div>
@@ -46,10 +54,10 @@
 
         <footer>
             <div class="social-links">
-                <a href="https://www.saab.com/" target="_blank"><img src="images/saab.jpg" /></a>
-                <a href="https://www.facebook.com/saabtechnologies/" target="_blank"><img src="images/facebook.png" /></a>
-                <a href="https://twitter.com/Saab" target="_blank"><img src="images/twitter.png" /></a>
-                <a href="https://www.instagram.com/saab/" target="_blank"><img src="images/instagram.png" /></a>
+                <img src="images/Messerschmitt.jpg" onclick="error404()"/>
+                <img src="images/facebook.png" onclick="error404()"/>
+                <img src="images/twitter.png" onclick="error404()"/>
+                <img src="images/instagram.png" onclick="error404()"/>
             </div>
         </footer>
     </div>
