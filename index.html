@@ -1,20 +1,169 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<! DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
 <head>
     <meta charset="utf-8">
-    <meta lang="zh-tw">
-    <title>TITLE HERE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>此處應有一大標題</title>
     <style>
-        h1 {
-            text-align: center;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
     </style>
-
-    <script>
-
-</script>
 </head>
 
 <body>
-    <h1>TITLE FOR TEST</h1>
+    <header>
+        <nav>
+            <div class="spilt-text">
+                <div><a href="">TEXT HERE</a></div>
+                <div><a href="">TEXT HERE</a></div>
+                <div><a href="">TEXT HERE</a></div>
+                <div><a href="">TEXT HERE</a></div>
+                <div><a href="">TEXT HERE</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="generic-font">
+        <section id="about">
+            <h1>關於我</h1>
+            <p>TEXT HERE</p>
+            <p>TEXT HERE</p>
+            <p>TEXT HERE</p>
+        </section>
+
+        <section id="educational">
+            <div class="block-background">
+                <div class="block-title">學歷</div>
+                <div class="inside-block">
+                    <div class="spilt-text">
+                        <div class="left-half generic-title-21">國立屏東科技大學</div>
+                        <div class="right-half">2020/9/14 ~ 2024/6/15</div>
+                    </div>
+                    <span class="generic-hashtag">資訊管理系 | 日間部就學中</span>
+                </div>
+                <div class="inside-block">
+                    <div class="spilt-text">
+                        <div class="left-half generic-title-21">國立新竹高商</div>
+                        <div class="right-half">2017/8/30 ~ 2020/6/01</div>
+                    </div>
+                    <span class="generic-hashtag">資料處理科 | 日間部畢業</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="project">
+            <div class="block-background">
+                <div class="block-title">作品</div>
+                <table>
+                    <tbody>
+                            <tr>
+                                <td rowspan="4" class="project_image"><img src="/media/project_1_image.jpg" alt="project_1_image"></td>
+                                <td class="generic-title-21">道路車輛辨識系統</td>
+                                <td class="generic-date">2023/7~2023/10</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="generic-hashtag">#Python #YOLOv8 #AdaBins #Tkinter</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="project_content">
+                                    <p>畢業專題：WatchOut!你敢撞我試試看　道路車輛辨識系統</p>
+                                    <p>藉由使用者上傳影片，利用YOLOv8的實例分割及AdaBins深度測距模型等技術，偵測車輛有無依法規規定禮讓行人，並儲存偵測到的違規事件。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="project_link">link</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="block-background">
+                <table>
+                    <tbody>
+                            <tr>
+                                <td rowspan="4" class="project_image"><img src="/media/project_2_image.jpg" alt="project_1_image"></td>
+                                <td class="generic-title-21">影像處理系統</td>
+                                <td class="generic-date">2023/7~2023/10</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="generic-hashtag">#Python #OpenCV #Tkinter #GitHub</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="project_content">
+                                    <p>包含邊緣偵測、虛擬色彩、色彩轉換以及各種特效、濾鏡和雜訊等多種影像處理技術的練習與實作。
+                                        同時利用 GitHub 進行版本控管。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="project_link">link</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="block-background">
+                <table>
+                    <tbody>
+                            <tr>
+                                <td rowspan="4" class="project_image"><img src="/media/project_3_image.jpg" alt="project_1_image"></td>
+                                <td class="generic-title-21">手勢辨識系統</td>
+                                <td class="generic-date"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="generic-hashtag">#Python #MediaPipe #人工智慧</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="project_content">
+                                    <p>使用 MediaPipe 偵測手部動作並儲存座標，後利用 AI 技術即時的判斷目前手勢。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="project_link">link</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <section id="story">
+            <div class="block-background story-content">
+                <div class="block-title">自傳</div>
+                <p>　　我是陳鑫彰，認真負責、追求完美，面對困難從不輕言放棄，遭遇挫折快速地重振旗鼓，是我個人特質的對佳寫照。
+                    目前就讀於國立屏東科技大學資訊管理系，擅長Python、影像辨識、影像處理。</p>
+                <p>　　家父是一名工程師，也是我對程式領域興趣的起源，國小接觸到的Scratch確立了我成為一名工程師的志向並，在高中時期正式踏上了程式的路途。
+                    從高中正式接觸程式開始，因進度超前故長期被老師教授放養，致使絕大部分的程式技能都是自學而來的。</p>
+                <p>　　在大學期間的第一份期末專題是在一片混亂中完成的，然而這次慘痛的教訓卻也帶給我極為寶貴的經驗，讓我得以體悟到專案管理和時間安排的重要，為未來的專案奠定了良好的基礎。
+                    我喜歡以目標為導向，在選定一個要解決的問題或是一個特定的目標後再去尋找並學習所需的技術，因此在大學期間，我寫了一個又一個的小程式或小遊戲，以此來的鍛鍊我的程式水平和自學能力。
+                    在求學期間使用的語言以Python為主，同時亦有接觸C、C#、Java、PHP和MySQL等。</p>
+            </div>
+        </section>
+
+        <section id="skill" class="">
+            <div class="block-background">
+                <div class="block-title">技能</div>
+                <div class="">
+                    <span class="main-skill-title">軟體程式開發</span>
+                    <p class="main-skill-text">軟體程式開發</p>
+                    <span class="generic-hashtag">#python #openCV #影像處理 #影像辨識</span>
+                </div>
+                <br><br>
+                <div class="">
+                    <span class="main-skill-title">網頁開發</span>
+                    <p class="main-skill-text">網頁程式開發</p>
+                    <span class="generic-hashtag">#HTML #CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="appendix">
+            <div class="block-background">
+                <div class="block-title">附件</div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
