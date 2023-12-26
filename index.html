@@ -1,6 +1,7 @@
 <! DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
 <head>
+    <script src="initPage.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -8,21 +9,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
     </style>
-    <script src="myScript.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="spilt-text">
-                <div><a href="">TEXT HERE</a></div>
-                <div><a href="">TEXT HERE</a></div>
-                <div><a href="">TEXT HERE</a></div>
-                <div><a href="">TEXT HERE</a></div>
-                <div><a href="">TEXT HERE</a></div>
-            </div>
-        </nav>
-    </header>
+    <div id="topNavigation"><script>initNavigation()</script></div>
 
     <main class="generic-font">
 
@@ -31,17 +21,35 @@
                 <div class="about-banner">
                         <img alt="banner image" src="media/project_1_image.jpg">
                 </div>
-
                 <div class="about-profile">
                     <img alt="profile image" src="media/myself_image.jpg">
-                    <p class="about-profile-title"><span class="generic-title-21">陳鑫彰　</span>
-                                                   <span class="generic-hashtag ">#python</span></p>
+                    <p class="about-profile-title" id="about-profile-title">
+                        <span class="generic-title-21">陳鑫彰　</span>
+                        <script>addSkillTag('about-profile-title', '#python', '#影像處理/辨識')</script></p>
                 </div>
-
                 <div class="about-content">
                     <p>國立屏東科技大學資訊管理系 大學日間就讀中<br>
                     <span class="generic-hashtag">屏東縣內埔鄉 | 希望職稱：軟體工程師</span></p><br><br>
                     <p>就讀於屏東科大資管系，擅長Python、影像辨識與處理，亦熟悉HTML、PHP、MYSQL等，目前正在尋找四下實習中。</p>
+                </div>
+
+                <div class="about-moreInfo">
+                    <div id="about-moreInfo-extraInfo" style="display: none" class="about-moreInfo-extraInfo">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="title">個人資料</div>
+                            <div class="text">男、21歲、未役</div>
+                        </div>
+                        <div class="row">
+                            <div class="title">就業狀態</div>
+                            <div class="text">待業中 找實習(準應屆畢業生)</div>
+                        </div>
+                        <div class="row">
+                            <div class="title">通訊地址</div>
+                            <div class="text">屏東縣內埔鄉</div>
+                        </div>
+                    </div>
+                    <p id="about-moreInfo-title" class="generic-hashtag mouse-pointer" onclick="about_moreInfo_toggleMore()">顯示更多 ▼</p>
                 </div>
             </div>
         </section>
@@ -152,19 +160,19 @@
             </div>
         </section>
 
-        <section id="skill" class="">
+        <section id="skill">
             <div class="block-background">
                 <div class="block-title">技能</div>
-                <div class="">
+                <div class="main-skill" id="skill-1">
                     <span class="main-skill-title">軟體程式開發</span>
                     <p class="main-skill-text">軟體程式開發</p>
-                    <span class="generic-hashtag">#python #openCV #影像處理 #影像辨識</span>
+                    <script>addSkillTag('skill-1','#python', '#openCV', '#影像處理', '#影像辨識', '#MySQL')</script>
                 </div>
-                <br><br>
-                <div class="">
+
+                <div class="main-skill" id="skill-2">
                     <span class="main-skill-title">網頁開發</span>
                     <p class="main-skill-text">網頁程式開發</p>
-                    <span class="generic-hashtag">#HTML #CSS</span>
+                    <script>addSkillTag('skill-2','#HTML', '#CSS', '#PHP', '#JavaScript')</script>
                 </div>
             </div>
         </section>
@@ -179,5 +187,7 @@
     <footer>
 
     </footer>
+
+    <script src="myScript.js"></script>
 </body>
 </html>

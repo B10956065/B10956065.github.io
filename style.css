@@ -45,7 +45,9 @@ section {
     line-height: 24px;
     font-weight: bold;
 }
-
+.mouse-pointer {
+    cursor: pointer;
+}
 .align-items-center {
     text-align: center;
 }
@@ -130,7 +132,7 @@ section {
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: top center;
-    image-rendering: high-quality;
+    image-rendering: auto;
     border-radius: 50%;
     border: 4px solid #ffffff;
 }
@@ -141,11 +143,48 @@ section {
     align-items: center;
     z-index: 1;
 }
+.about-profile-title .tag {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: rgba(69,69,69,0.75);
+    border-radius: 15px;
+    padding: 3px 10px 3px 10px;
+    margin-right: 5px;
+}
 
 .about-content {
     padding: 10px 10px 50px 10px;
     margin-left: 30%;
     box-sizing: border-box;
+}
+.about-moreInfo {
+    padding: 10px;
+    text-align: center;
+}
+.about-moreInfo .divider {
+    border-top: 3px solid #f3f3f3;
+    margin-bottom: 10px;
+}
+.about-moreInfo-extraInfo {
+    padding: 10px 10px 20px 10px
+}
+.about-moreInfo .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-moreInfo .row .title {
+    position: relative;
+    transform: translateX(-50%);
+    padding: 5px 20px 5px 5px;
+    text-align: left;
+    font-weight: bold;
+}
+.about-moreInfo .row .text {
+    position: absolute;
+    text-align: right;
+    left: 50%;
 }
 
 /* project */
@@ -174,6 +213,21 @@ section {
 }
 
 /* skill */
+.main-skill {
+    padding-bottom: 20px;
+}
+.main-skill .tag {
+    display: inline-block;
+    color: #707070;
+    font-size: 16px;
+    background-color: #e1acbd;
+    border-radius: 15px;
+    padding: 2px 10px 2px 10px;
+    margin-right: 5px;
+}
+.main-skill:last-child {
+    padding-bottom: 5px;
+}
 .main-skill-title {
     font-weight: bold;
     position: relative;
@@ -187,7 +241,6 @@ section {
     background-image: linear-gradient(to right,#ffffff,0%, #c19c60 5%,#bd741e 10%, #bd741e 75%, #c19c60 90%, #ffffff 100%);
     height: 3px;
 }
-
 .main-skill-text {
     line-height: 45px;
 }
